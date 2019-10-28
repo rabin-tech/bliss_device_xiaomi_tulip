@@ -369,7 +369,7 @@
          Example for a 10dp x 10dp square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
 
-<<<<<<< HEAD
+
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
@@ -423,12 +423,18 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+
 	
     <!-- Controls the navigation bar interaction mode:
          0: 3 button mode (back, home, overview buttons)
          1: 2 button mode (back, home buttons + swipe up for overview)
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+    </string-array>
 
 
 </resources>
