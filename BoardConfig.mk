@@ -150,6 +150,11 @@ TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_ODM_PROP += $(LOCAL_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
+TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
