@@ -102,8 +102,10 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
 
+# Camera - from tulip V10.3.6.0.PEKMIXM
+vendor/lib/hw/camera.sdm660.so|78b9c0db7f8372dec2e5b3713d7ad45e6f35e109
+
 # Camera - from tulip V12.0.1.0.PEKMIXM
-vendor/lib/hw/camera.sdm660.so|b20482057e396005904e261b4d1d24baf59a77fd
 vendor/lib/libSNPE.so|66f23aae6d30b09121f06635c749d6ae47543359
 vendor/lib/libVDClearShot.so|fe429e3ddac8f989d2c754b6a3da36ebe8b85060
 vendor/lib/libVDSuperPhotoAPI.so|913cf65475d0329b321c912d24c98abc428d5e55
