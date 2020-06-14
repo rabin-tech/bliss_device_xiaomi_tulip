@@ -149,9 +149,6 @@ TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
-# Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
