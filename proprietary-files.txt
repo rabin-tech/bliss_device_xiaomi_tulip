@@ -1284,15 +1284,19 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161c
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|346a6f516637632cce8297f78227172d54d26040
 
 # Sensors - from tulip V12.0.1.0.PEKMIXM
-vendor/bin/sensors.qti|d4c80e3ce98ef8f180ac1c55e9a3641c8e0d4094
-vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/sensor_def_qcomdev.conf|e09f39aa414d844076e34e539d2f4f9c9239db05
-vendor/lib/hw/activity_recognition.sdm660.so|052e39f7ad6a3b32071b89bead4fa7e221f94054
-vendor/lib/libsensor_reg.so|51ee717db755db4c7dce896fba6320a15d6d7f03
-vendor/lib/libsensor1.so|16809baebd49ac2f2a094489e8fca5f6c24cfd95
-vendor/lib64/hw/activity_recognition.sdm660.so|823ad3eaa2bb77140d319f298d1522208cda4f33
-vendor/lib64/libsensor_reg.so|52c8b0e7cdbcc5522ac87fcce1926bb3caccd66a
-vendor/lib64/libsensor1.so|5a6fade60f7d953fa9aee62d27cc662b07cd8f1e
+
+# Sensors - from LA.UM.8.2.1.r1-05600-sdm660
+vendor/bin/sensors.qti|80122bf87aee029fa7029aa1cc8a651cf167a06b
+vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
+vendor/lib/hw/activity_recognition.sdm660.so|abb27164556460cfd4c059a3298570acc387ac61
+vendor/lib/libsensor_reg.so|170c40b9b7d48c922cd3ca1a552a34311ee79799
+vendor/lib/libsensor1.so|b1b0dcb45432e51fabffe595010f35a017c7a3fd
+vendor/lib/sensors.ssc.so|9276c8863dccd2cd13e0a29083e75648ab0c0e97
+vendor/lib64/hw/activity_recognition.sdm660.so|ad32fc78b016d290dfe23435f6132fd918064dd8
+vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
+vendor/lib64/libsensor1.so|dac9d5fb1b5aacfa5bedf812ebdd04eadd0af2dc
+vendor/lib64/sensors.ssc.so|da3e7b1722ea136bd76b716ddd2ec814ee3cc0b7
 
 # Sensors - from PL2_sprout-user 10 QKQ1.190828.002 00WW_4_150
 vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
