@@ -307,7 +307,7 @@
 
     <!-- Minimum screen brightness setting.
          The user is forbidden from setting the brightness below this level. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.07</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
 
     <!-- Maximum screen brightness setting.
          The user is forbidden from setting the brightness below this level. -->
