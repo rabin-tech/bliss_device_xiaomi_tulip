@@ -261,7 +261,6 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -412,7 +411,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+    $(LOCAL_PATH)/configs/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_PACKAGES += \
