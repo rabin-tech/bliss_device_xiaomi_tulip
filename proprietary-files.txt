@@ -842,10 +842,6 @@ vendor/firmware/fpctzappfingerprint.b07|cb22bc47816a9c456fda2fdbd24486ea925fda42
 vendor/firmware/fpctzappfingerprint.mdt|f709249da0d08cdcf43f561782ac3d6695a154ec
 
 # Fingerprint sensor - from tulip V12.0.1.0.PEKMIXM
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|9aa63e30e79364e296061a69a77c8c6e00ea89d4
-vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
-vendor/framework/com.fingerprints.extension.jar|92c84a6f1ecc47be4a1e447fa057dc732a3e9579
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|d7724df4ba176e3be1adb208119dba50d6453a94
 vendor/lib64/hw/fingerprint.fpc.default.so|75fb79b00c7f0280bd71153e14f1d238f2668eb9
 vendor/lib64/hw/fingerprint.goodix.default.so|72fece09819284c3dbdb81f8b1ec7b4535ca3399
 vendor/lib64/com.fingerprints.extension@1.0.so|3071f86486e0de18f0b14cf4b9beb49978335e4b
@@ -853,7 +849,6 @@ vendor/lib64/libgf_ca.so|76dd0fce2fd7b8f1f05a39318b28f0254a30a507
 vendor/lib64/libgf_hal.so|50c32f010780b04b414bf9ac7069db7fbe5d0ee3
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|854340353921d90cb254c0156bc5cde9f184a9de
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|b0a67db86e3e74762b6d85fcfc16cda6bcde2ec7
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|69ae7b2e6ce22e23f70caa20c340e99510409b57
 
 # FM - from ginkgo V12.0.1.0.RCOCNXM
 system_ext/lib64/fm_helium.so|99140db2b53af1b70577507517540e64aff87d7a
