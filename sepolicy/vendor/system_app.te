@@ -3,6 +3,8 @@ get_prop(system_app, theme_prop)
 set_prop(system_app, theme_prop) 
 set_prop(system_app, theme_prop)
 
+allow system_app proc_vmallocinfo:file r_file_perms;
+
 # FPS Info
 allow system_app sysfs_graphics:dir search;
 allow system_app sysfs_graphics:file { getattr open read write };
