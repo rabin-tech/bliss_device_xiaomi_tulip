@@ -317,7 +317,9 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.xiaomi_parts.rc
+    init.xiaomi_parts.rc \
+    apex_metadata.rc
+
 
 # IRQ
 PRODUCT_COPY_FILES += \
