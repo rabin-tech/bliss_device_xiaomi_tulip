@@ -679,6 +679,7 @@ function configure_read_ahead_kb_values() {
 
     dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
 
+    # Set 128 for all targets.
     echo 128 > /sys/block/mmcblk0/bdi/read_ahead_kb
     echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
     for dm in $dmpts; do
@@ -2907,6 +2908,7 @@ case "$target" in
 
         case "$soc_id" in
             "336" | "337" | "347" | "360" | "393" )
+
       # Core control parameters on silver
       echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
       echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
@@ -5241,13 +5243,14 @@ case "$target" in
 	echo 400000 > /proc/sys/kernel/sched_freq_dec_notify
 	echo 5 > /proc/sys/kernel/sched_spill_nr_run
 	echo 1 > /proc/sys/kernel/sched_restrict_cluster_spill
-        echo 1 > /proc/sys/kernel/sched_prefer_sync_wakee_to_waker
+    echo 1 > /proc/sys/kernel/sched_prefer_sync_wakee_to_waker
 
-        # disable thermal bcl hotplug to switch governor
-        echo 0 > /sys/module/msm_thermal/core_control/enabled
+    # disable thermal bcl hotplug to switch governor
+    echo 0 > /sys/module/msm_thermal/core_control/enabled
 
-        # online CPU0
-        echo 1 > /sys/devices/system/cpu/cpu0/online
+    # online CPU0
+    echo 1 > /sys/devices/system/cpu/cpu0/online
+
 	# configure governor settings for little cluster
 	echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 	echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
@@ -5262,8 +5265,10 @@ case "$target" in
 	echo 79000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis
 	echo 518400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 	echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif
-        # online CPU4
-        echo 1 > /sys/devices/system/cpu/cpu4/online
+
+    # online CPU4
+    echo 1 > /sys/devices/system/cpu/cpu4/online
+
 	# configure governor settings for big cluster
 	echo "interactive" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 	echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
