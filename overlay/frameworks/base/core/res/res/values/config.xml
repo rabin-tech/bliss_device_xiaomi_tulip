@@ -453,6 +453,7 @@
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
 
+
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
     <!-- Whether device has a physical display cutout -->
@@ -463,5 +464,16 @@
     <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 
 </resources>
