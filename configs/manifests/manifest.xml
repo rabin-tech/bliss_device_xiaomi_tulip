@@ -139,10 +139,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>ISensorManager</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
@@ -152,8 +148,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IKeymasterDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISensors/default</fqname>
-        <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.light</name>
@@ -179,6 +173,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>1.0</version>
         <interface>
             <name>ISensors</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISensorManager</name>
             <instance>default</instance>
         </interface>
     </hal>
