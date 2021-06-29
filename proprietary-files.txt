@@ -686,7 +686,7 @@ vendor/firmware/cpp_firmware_v1_12_0.fw|c7939d46f9875054c5b30c3280862e7d9df3dcf9
 vendor/lib/libois_bu63165.so|1a101191e3326648d9c517f184e40255154bc993
 vendor/lib/libois_lc898122.so|26304ff7cf07d2782a79e4e743f4ce2e0a1063bf
 
-# Camera watermark - from jasmine V11.0.26.0.QDIMIXM
+# Camera watermark - from jasmine V11.0.8.0.QDIMIXM
 vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
