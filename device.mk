@@ -237,6 +237,12 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
+
+# Google Photos
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
+
+
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
