@@ -11,6 +11,6 @@ LOCAL_OVERRIDES_PACKAGES += SafetyHubPrebuilt SCONE ScribePrebuilt Showcase Snap
 LOCAL_OVERRIDES_PACKAGES += SprintDM SprintHM Tycho USCCDM VZWAPNLib VzwOmaTrigger WallpapersBReel2020
 LOCAL_OVERRIDES_PACKAGES += Youtube YouTubeMusicPrebuilt arcore obdm_stub
 LOCAL_UNINSTALLABLE_MODULE := true
-LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_CERTIFICATE := platform
 LOCAL_SRC_FILES := /dev/null
 include $(BUILD_PREBUILT)
