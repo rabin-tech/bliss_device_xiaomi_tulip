@@ -23,7 +23,7 @@
     <integer name="config_maxNotificationIcons">4</integer>
 
     <!-- Whether to show activity indicators in the status bar -->
-    <bool name="config_showActivity">true</bool>
+    <bool name="config_showActivity">false</bool>
 
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
