@@ -19,22 +19,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
+# Inherit some common AOSP stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from tulip device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/xiaomi/tulip/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := tulip
-PRODUCT_MANUFACTURER := Xiaomi
+# Device info
 PRODUCT_NAME := aosp_tulip
+PRODUCT_DEVICE := tulip
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
+PRODUCT_MANUFACTURER := Xiaomi
+TARGET_VENDOR_PRODUCT_NAME := tulip
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := tulip
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
+# Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys"
 
