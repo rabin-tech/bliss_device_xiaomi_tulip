@@ -10,3 +10,7 @@ type sysfs_usb_fastcharge, sysfs_type, fs_type;
 
 # KCAL
 type kcal_sysfs, sysfs_type, fs_type;
+
+# Battery Saver
+type sysfs_battery_saver, fs_type, sysfs_type;
+
