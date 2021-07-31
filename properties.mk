@@ -106,6 +106,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     persist.sys.sf.disable_blurs=1
 
+# Power Saver
+PRODUCT_PROPERTY_OVERRIDES += \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
+    
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
