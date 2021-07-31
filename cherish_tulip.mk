@@ -41,6 +41,9 @@ CHERISH_BUILD_TYPE :=OFFICIAL
 # Maintainer
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=Rabin
+    
+#Blur
+TARGET_USES_BLUR := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
