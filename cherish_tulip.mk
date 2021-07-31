@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Inherit some common Cherish stuff
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+USE_LAWNCHAIR := true
 
 # Inherit from tulip device
 $(call inherit-product, device/xiaomi/tulip/device.mk)
