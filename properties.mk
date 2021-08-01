@@ -177,8 +177,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GMS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.ime.kb_pad_port_b=1
-
+    ro.com.google.ime.kb_pad_port_b=1 \
+    ro.com.google.ime.corner_key_r=35
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
@@ -265,4 +265,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.low_ram=false \
     ro.lmk.log_stats=true \
-    ro.lmk.use_psi=false
+    ro.lmk.use_psi=false  
+    
+
+
+    
+
