@@ -14,8 +14,8 @@
 // limitations under the License.
 
 cc_library_shared {
-    name: "libcamera_sdm660_shim",
-    srcs: ["libcamera_sdm660_shim/camera_sdm660_shim.cpp"],
+    name: "libcamera_tulip_shim",
+    srcs: ["libcamera_tulip_shim/camera_tulip_shim.cpp"],
     shared_libs: [
         "libui",
         "libutils",
