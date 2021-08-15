@@ -176,6 +176,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.enable_hwc_vds=0 \
     debug.sdm.support_writeback=0 \
+    debug.performance.tuning=1 \
     ro.opengles.version=196610 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
