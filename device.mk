@@ -27,6 +27,7 @@ DEVICE_PATH := device/xiaomi/tulip
 # Inherit properties
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
 # APEX
 ENABLE_APEX := true
