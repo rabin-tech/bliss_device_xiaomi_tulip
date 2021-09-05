@@ -15,7 +15,6 @@
  * limitations under the License.
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip"
 
 #include <hardware/hw_auth_token.h>
 
@@ -23,6 +22,7 @@
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
 
+#include <cutils/properties.h>
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -212,6 +212,10 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     return sInstance;
 }
 
+void setFpVendorProp(const char *fp_vendor) {
+    property_set("persist.vendor.sys.fp.vendor", fp_vendor);
+}
+
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
 {
     const hw_module_t *hw_module = nullptr;
@@ -264,6 +268,7 @@ fingerprint_device_t* getFingerprintDevice()
     if (fp_device == nullptr) {
         ALOGE("Failed to load fpc fingerprint module");
     } else {
+        setFpVendorProp("fpc");
         return fp_device;
     }
 
@@ -271,8 +276,11 @@ fingerprint_device_t* getFingerprintDevice()
     if (fp_device == nullptr) {
         ALOGE("Failed to load goodix fingerprint module");
     } else {
+        setFpVendorProp("goodix");
         return fp_device;
     }
+
+    setFpVendorProp("none");
 
     return nullptr;
 }
