@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_tulip.mk
+    $(LOCAL_DIR)/bliss_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_tulip-user \
-    cherish_tulip-userdebug \
-    cherish_tulip-eng
+    bliss_tulip-user \
+    bliss_tulip-userdebug \
+    bliss_tulip-eng
