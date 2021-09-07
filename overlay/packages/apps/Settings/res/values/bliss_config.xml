@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Battery Health enable -->
+<bool name="config_supportBatteryHealth">true</bool>
+
+    <!-- Battery Charging cycle counts -->
+    <bool name="config_showChargingCycles">true</bool>
+
+    <!-- Battery Health -->
+  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+  <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
+  <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartFeatures">true</bool>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <integer name="config_smartChargingBatteryLevel">80</integer>
+    <integer name="config_smartChargingBatteryResumeLevel">60</integer>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+
+    <!-- Enable Call recording -->
+    <bool name="call_recording_enabled">true</bool>
+    <integer name="call_recording_audio_source">4</integer>
+
+</resources>
